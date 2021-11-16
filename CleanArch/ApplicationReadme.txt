@@ -1,0 +1,1 @@
+- This project holds all of our services and service interfaces as well as view models that will be presented by out MVC project.
