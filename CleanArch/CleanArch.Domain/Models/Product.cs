@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using CleanArch.Domain.Models.Base;
 
 namespace CleanArch.Domain.Models
 {
-    public class Product
+    public class Product : Entity
     {
         public int Id { get; set; }
         public int Name { get; set; }
