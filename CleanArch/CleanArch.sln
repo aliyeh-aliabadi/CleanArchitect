@@ -6,16 +6,22 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Application", "Learning.CleanArch.Application", "{D97E7EE3-0C75-4B67-81C5-0F2142ACAEAE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Domain", "Learning.CleanArch.Domain", "{6F459D24-1300-43E3-88F4-24218812E4EF}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Infra.IoC", "Learning.CleanArch.Infra.IoC", "{F44243E6-0D9E-4099-8B58-6835D1EA6372}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Infra.Data", "Learning.CleanArch.Infra.Data", "{DF5B39B7-834D-46AB-8B42-C2E273D77A2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.UI.Mvc", "Learning.CleanArch.UI.Mvc", "{72EB92B8-300C-48FA-85B5-5BDBC9C8F823}"
+	ProjectSection(SolutionItems) = preProject
+		UIReadme.txt = UIReadme.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Mvc", "CleanArch.Mvc\CleanArch.Mvc.csproj", "{D92B76EC-EE28-4D6B-9683-0D4032B4EF06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Mvc", "CleanArch.Mvc\CleanArch.Mvc.csproj", "{D92B76EC-EE28-4D6B-9683-0D4032B4EF06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{014C7EA2-8A52-4E03-A2FE-8B15859E180B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{014C7EA2-8A52-4E03-A2FE-8B15859E180B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

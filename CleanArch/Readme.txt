@@ -1,0 +1,2 @@
+- Domain Layer core entities such as  Student class, University class. 
+- So it holds your domain, your important entities that will be interacting with most of yours application.
