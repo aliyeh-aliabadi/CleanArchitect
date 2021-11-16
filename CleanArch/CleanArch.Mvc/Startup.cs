@@ -1,3 +1,4 @@
+using CleanArch.Infra.Data.Context;
 using CleanArch.Mvc.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,10 @@ namespace CleanArch.Mvc
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("CleanArchDbConnection")));
+            services.AddDbContext<ProjectDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ProjectDbConnection"));
+            });
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
