@@ -1,1 +1,3 @@
 - This project helps us to separate all of our dependencies from the interface to the concrete implementaion.
+- It has connected all our projects together
+- Next we will use DependencyContainer class in Presentation layer/ Startup
