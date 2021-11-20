@@ -41,6 +41,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "041_Learning.CleanArch.Bus", "041_Learning.CleanArch.Bus", "{B7C5EB68-DA5E-4B88-BDD2-2C43372340B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Api", "Learning.CleanArch.Api", "{22658DD9-9017-486D-A9BF-1887E092032B}"
+	ProjectSection(SolutionItems) = preProject
+		ApiReadme.txt = ApiReadme.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Bus", "CleanArch.Infra.Bus\CleanArch.Infra.Bus.csproj", "{FCA07008-AA7F-4C01-BE42-A7E8DECAF8A1}"
 EndProject

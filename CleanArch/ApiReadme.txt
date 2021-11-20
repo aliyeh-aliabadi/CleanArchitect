@@ -1,0 +1,7 @@
+- In this project we can use same connection string and same RegisterService method from Mvc Project 
+- and add Ioc Project refrence 
+- and make sure we have our DbContext for ProjectDbContext
+- Add MediatR configuration in Startup
+- Add MediatR and MediatR.extensions.microsoft.dependency.injection Refrences via Nuget
+- Add Swashbuckle.AspNetCore reference
+- add Swagger configuration at Startup.cs Configure and ConfigureService
