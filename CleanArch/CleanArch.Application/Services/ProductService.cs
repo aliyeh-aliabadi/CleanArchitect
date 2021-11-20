@@ -30,6 +30,7 @@ namespace CleanArch.Application.Services
                 productViewModel.Description,
                 productViewModel.ImageUrl
                 );
+
             _bus.SendCommand(createProductCommand);
         }
 
