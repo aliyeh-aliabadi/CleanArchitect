@@ -9,7 +9,7 @@ namespace CleanArch.Domain.Interfaces
 {
     public interface IProductRepository
     {
-        IEnumerable<Product> GetProducts();
+        IQueryable<Product> GetProducts();
         void Add(Product product);
     }
 }

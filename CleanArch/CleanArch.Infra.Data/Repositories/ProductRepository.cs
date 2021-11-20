@@ -24,7 +24,7 @@ namespace CleanArch.Infra.Data.Repositories
             _ctx.SaveChanges();
         }
 
-        public IEnumerable<Product> GetProducts()
+        public IQueryable<Product> GetProducts()
         {
             return _ctx.Products;
         }

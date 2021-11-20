@@ -16,8 +16,7 @@ namespace CleanArch.Mvc.Controllers
         }
         public IActionResult Index()
         {
-            ProductViewModel model = _productService.GetProducts();
-            return View(model);
+            return View(_productService.GetProducts());
         }
     }
 }

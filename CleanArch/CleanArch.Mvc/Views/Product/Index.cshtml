@@ -1,8 +1,8 @@
-﻿@model CleanArch.Application.ViewModels.ProductViewModel
+﻿@model IEnumerable<CleanArch.Application.ViewModels.ProductViewModel>
 
 <div class="container body-content">
     <div class="row product-content">
-        @foreach (var product in Model.Products)
+        @foreach (var product in Model)
         {
             <div class="product-image-container">
                 <div class="product-image" style="background-image:url(@product.ImageUrl)"></div>

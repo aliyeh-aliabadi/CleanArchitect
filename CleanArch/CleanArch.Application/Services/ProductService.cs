@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModels;
 using CleanArch.Domain.Commands;
@@ -28,21 +29,21 @@ namespace CleanArch.Application.Services
         //Use MediateR
         public void CreateProduct(ProductViewModel productViewModel)
         {
-            var createProductCommand = new CreateProductCommand(
-                productViewModel.Name,
-                productViewModel.Description,
-                productViewModel.ImageUrl
-                );
+            //var createProductCommand = new CreateProductCommand(
+            //    productViewModel.Name,
+            //    productViewModel.Description,
+            //    productViewModel.ImageUrl
+            //    );
 
-            _bus.SendCommand(createProductCommand);
+            //_bus.SendCommand(createProductCommand);
+
+            //Use AutoMapper
+            _bus.SendCommand(_autoMapper.Map<CreateProductCommand>(productViewModel));
         }
 
-        ProductViewModel IProductService.GetProducts()
+        public IEnumerable<ProductViewModel> GetProducts()
         {
-            return new ProductViewModel()
-            {
-                Products = _productRepository.GetProducts()
-            };
+            return _productRepository.GetProducts().ProjectTo<ProductViewModel>(_autoMapper.ConfigurationProvider);
         }
     }
 }
