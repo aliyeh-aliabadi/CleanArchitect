@@ -8,4 +8,8 @@
     <Folder Include="Models\Enums\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArch.Domain.core\CleanArch.Domain.core.csproj" />
+  </ItemGroup>
+
 </Project>

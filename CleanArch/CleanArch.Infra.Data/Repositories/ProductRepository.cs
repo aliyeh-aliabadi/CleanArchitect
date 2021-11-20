@@ -17,6 +17,13 @@ namespace CleanArch.Infra.Data.Repositories
         {
             _ctx = ctx;
         }
+
+        public void Add(Product product)
+        {
+            _ctx.Products.Add(product);
+            _ctx.SaveChanges();
+        }
+
         public IEnumerable<Product> GetProducts()
         {
             return _ctx.Products;
