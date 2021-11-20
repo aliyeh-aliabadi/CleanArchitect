@@ -25,8 +25,6 @@ namespace CleanArch.Infra.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("Cost")
-                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -34,7 +32,7 @@ namespace CleanArch.Infra.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
