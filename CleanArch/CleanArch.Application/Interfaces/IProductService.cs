@@ -11,7 +11,8 @@ namespace CleanArch.Application.Interfaces
     // and then map it back to our course view model and then presend it to the MVC project
     public interface IProductService
     {
-        ProductViewModel GetProducts();  
+        ProductViewModel GetProducts(); 
+        void CreateProduct(ProductViewModel productViewModel);
 
     }
 }
