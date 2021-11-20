@@ -1,4 +1,5 @@
-﻿using CleanArch.Application.Interfaces;
+﻿using AutoMapper;
+using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModels;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.core.Bus;
@@ -15,11 +16,13 @@ namespace CleanArch.Application.Services
     {
         private readonly IProductRepository _productRepository;
         private readonly IMediatorHandler _bus;
+        private readonly IMapper _autoMapper;
 
-        public ProductService(IProductRepository productRepository, IMediatorHandler bus)
+        public ProductService(IProductRepository productRepository, IMediatorHandler bus, IMapper autoMapper)
         {
             _productRepository = productRepository;
             _bus = bus;
+            _autoMapper = autoMapper;
         }
 
         //Use MediateR
