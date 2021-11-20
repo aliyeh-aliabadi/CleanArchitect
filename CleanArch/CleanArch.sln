@@ -40,7 +40,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.IoC", "Clea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "041_Learning.CleanArch.Bus", "041_Learning.CleanArch.Bus", "{B7C5EB68-DA5E-4B88-BDD2-2C43372340B1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learning.CleanArch.Api", "Learning.CleanArch.Api", "{22658DD9-9017-486D-A9BF-1887E092032B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Learning.CleanArch.Api", "00_Learning.CleanArch.Api", "{22658DD9-9017-486D-A9BF-1887E092032B}"
 	ProjectSection(SolutionItems) = preProject
 		ApiReadme.txt = ApiReadme.txt
 	EndProjectSection
@@ -49,7 +49,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Bus", "Clea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain.core", "CleanArch.Domain.core\CleanArch.Domain.core.csproj", "{CF83908B-548D-4615-8082-14E7733F116C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Api", "CleanArch.Api\CleanArch.Api.csproj", "{51CC95F8-2463-49FD-ABEE-E864E47437C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Api", "CleanArch.Api\CleanArch.Api.csproj", "{51CC95F8-2463-49FD-ABEE-E864E47437C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
