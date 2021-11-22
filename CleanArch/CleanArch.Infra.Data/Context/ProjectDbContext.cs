@@ -15,5 +15,6 @@ namespace CleanArch.Infra.Data.Context
         }
 
         public DbSet<Product> Products {  get; set; }
+        public DbSet<Application> Applications { get; set; }
     }
 }
